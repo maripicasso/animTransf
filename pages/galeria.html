@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 	<title>Galeria</title>
 </head>
 <body>
@@ -33,22 +34,22 @@
 			<h1>Galeria de fotos</h1>
 		</div>
 		<div class="galeria">
-			<div class="foto1">
+			<div data-aos="fade-right"data-aos-offset="300" data-aos-easing="ease-in-sine" class="foto1">
 				<img src="../assets/img/galeria1.jpg" alt="foto">
 			</div>
-			<div class="foto2">
+			<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="300" class="foto2">
 				<img src="../assets/img/galeria2.jpg" alt="foto">
 			</div>
-			<div class="foto3">
+			<div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="foto3">
 				<img src="../assets/img/galeria3.jpg" alt="foto">
 			</div>
-			<div class="foto4">
+			<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="foto4">
 				<img src="../assets/img/galeria4.jpg" alt="foto">
 			</div>
-			<div class="foto5">
+			<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="300" class="foto5">
 				<img src="../assets/img/galeria5.jpg" alt="foto">
 			</div>
-			<div class="foto6">
+			<div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="foto6">
 				<img src="../assets/img/galeria6.jpg" alt="foto">
 			</div>				
 		</div>
@@ -76,5 +77,9 @@
 			</div>
 		</footer>
 	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>	
 </body>
 </html>

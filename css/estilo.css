@@ -16,7 +16,7 @@
 		"redes redes"
 		"suscripcion suscripcion"
 		"footer footer";
-		background: linear-gradient(#fefefe,#888888,#fefefe);
+		background: linear-gradient(#ECC28F,#fefefe,#8FDAEC,#80CD97);
 	}
 
 	/*---------HEADER---------*/
@@ -50,6 +50,11 @@
 		color: black;
 	}
 
+	.encabezado--menu ul li a:hover {
+		color: white;
+		border-bottom: 1px solid white;
+	}
+
 	.logo {
 		grid-area: logo;
 		display: grid;
@@ -58,6 +63,10 @@
 
 	.logo img {
 		margin: auto;
+	}
+
+	.logo img:hover {
+		transform: scale(1.1,1.1);
 	}
 
 
@@ -287,6 +296,11 @@
 		margin-top: 15px;
 	}
 
+	.pie--menu ul li a:hover {
+		color: white;
+		border-bottom: 1px solid white;
+	}
+
 	/*------------------------------Galeria--------------------------------*/
 
 	.gridGaleria {
@@ -315,6 +329,10 @@
 
 	.logoNombre img {
 		margin: auto;
+	}
+
+	.logoNombre img:hover {
+		transform: scale(1.1,1.1);
 	}
 
 	.nombreBar {
@@ -755,6 +773,10 @@
 		font-family: 'Cinzel', serif;
 		color: #E74C3C;
 		font-size: 25px;
+	}
+
+	.delivery:hover {
+		transform: scale(1.3,1.3);
 	}
 }
 

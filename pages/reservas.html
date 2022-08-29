@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 	<title>Reservas</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
 				<p>Mono Bar</p> 
 			</div>		
 		</div>
-		<div class="principalReservas">
+		<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="principalReservas">
 			<h1 class="principalReservas--titulosecundario">Reservas</h1>
 			<p class="principalReservas--subtitulo">Completa todos los campos para que podamos contactarte</p>
 		</div>
@@ -61,7 +62,7 @@
 				<label for="email">E-Mail </label>
 				<input type="text" id="email" name="email">
 			</div>
-			<div class="reservas--boton">
+			<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="reservas--boton">
 				<input type="submit" name="enviar">
 			</div>
 		</form>		
@@ -80,5 +81,9 @@
 			</div>
 		</footer>
 	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>	
 </body>
 </html>
